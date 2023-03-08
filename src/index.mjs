@@ -16,20 +16,22 @@ function App(props) {
   `;
 }
 
-let i = 0;
+/*
 
-// let update = async () => {
-//   let response = await fetch("/api/cpus");
-//   if (response.status !== 200) {
-//     throw new Error(`HTTP error! status: ${response.status}`);
-//   }
+let update = async () => {
+  let response = await fetch("/api/cpus");
+  if (response.status !== 200) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
 
-//   let json = await response.json();
-//   render(html`<${App} cpus=${json}></${App}>`, document.body);
-// };
+  let json = await response.json();
+  render(html`<${App} cpus=${json}></${App}>`, document.body);
+};
 
-// update();
-// setInterval(update, 200);
+update();
+setInterval(update, 200);
+
+*/
 
 let url = new URL("/realtime", window.location.href);
 // http => ws
